@@ -2,12 +2,23 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: #eaeaea;
 }
-section .row, .navbar{
+section .container, .navbar{
     background: white;
     -webkit-box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
     -moz-box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
     box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
     padding: 40px 45px 50px 45px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    color: #055555;
 }
 
 /* header */
@@ -18,13 +29,6 @@ section .row, .navbar{
 }
 /* recipes */
 
-.recipes .row{
-    background: white;
-    -webkit-box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
-    -moz-box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
-    box-shadow: 0px 0px 10px 3px rgba(217, 217, 217, 1);
-    padding: 40px 45px 50px 45px;
-}
 .text-bottom{
     font-size: 12px;
 
@@ -33,23 +37,98 @@ section .row, .navbar{
     margin-bottom: 3px;
 }
 .name-recipe{
-    font-size: 18px
+    font-size: 18px;
 }
 /* recipe */
 
-.recipe img{
-    height: 100%;
-    margin-left: -12px;
-}
 .recipe h6{
     font-family: 'Playfair Display', serif;
 }
-.recipe h2{
-    font-size: 32px;
-    font-family: 'Playfair Display', serif;
-    color: #055555;
-    font: bold;
-}
 .clock{
     margin-left: 10px;
+}
+/* error */
+
+.line{
+    height: 2px;
+    background: #dddddd;
+}
+.error a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    width: 105px;
+    height: 28px;
+    margin: 0 auto;
+}
+/* author */
+
+.author i{
+    color: #aaaaaa;
+    font-size: 20px;
+}
+
+/* recipe_blog */
+
+.recipe_blog h2{
+    font-size: 22px;
+}
+
+/* recipe_filtre */
+
+.recipe_filtre i{
+    color: #555555;
+}
+.author_text{
+    font-size: 12px;
+}
+.recipe_filtre .btn{
+    border-radius: 0;
+}
+.recipe_filtre .container{
+    height: 560px;
+}
+
+/* popular */
+
+.popular h2{
+    color: #921026;
+    font-size: 32px;
+}
+.popular h3{
+    font-size: 22px;
+}
+.popular a{
+    border-radius: 0;
+}
+.popular .container{
+    background-image: url(../img/popular.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 450px;
+    background-size: 100%;
+}
+
+/* tags */
+
+.tags p{
+    word-spacing: 11px;
+}
+
+/* footer */
+
+footer{
+    background: #2f2f2f;
+    padding-top: 60px;
+}
+footer i{
+    color: #555555;
+    width: 15px;
+}
+footer a{
+    color: #555555;
+}
+footer ul{
+    list-style: none;
 }
